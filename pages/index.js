@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
@@ -6,10 +7,17 @@ export default function Home() {
       <Head>
         <title>facebook</title> {/* here we inject the name of the bar */}
       </Head>
-      <h1>Lets Build Facebook</h1>
+
+      <Header />
+      {/* Header */}
+      <main>
+        {/* sidebar */}
+        {/* feed */}
+        {/* widgets */}
+      </main>
       {/* <footer>
         <span>Made with ❤ by Mayank</span>
       </footer> */}
     </div>
-  )
+  );
 }
