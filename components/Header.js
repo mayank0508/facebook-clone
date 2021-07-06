@@ -25,6 +25,8 @@ function Header() {
       {' '}
       {/* here i have declared everthing for the header that how its looking, tbh form the icon to the end the main content */}
       {/* <h1>Header</h1>  {/* here we are declaring the header as you can see in diffrent diffrent divs !!!} */}
+      
+      
       {/* Left */}{' '}
       {/* her we will be having everthing in the rihgt side of the page */}
       <div className="flex item-center">
@@ -49,6 +51,8 @@ function Header() {
           {/* here i have agian ised the inline class to make adjustments in CSS */}
         </div>
       </div>
+
+
       {/* Centre */}
       <div className="flex justify-center flex-grow">
         {' '}
@@ -61,11 +65,13 @@ function Header() {
           <HeaderIcon Icon={UserGroupIcon} />
         </div>
       </div>
+
+
       {/* Right */}
       <div className="flex item-center sm:space-x-2 justify-end">
         {/* profile picture will go here */}
 
-        <p className="whitespace-nonwrap font-semibold pr-3">
+        <p className="whitespace-nowrap font-semibold pr-3 mt-3">
           Mayank Kumar
         </p>
         <ViewGridIcon className="icon" />
