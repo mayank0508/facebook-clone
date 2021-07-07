@@ -73,19 +73,20 @@ function Header() {
 
 
       {/* Right */}
-      <div className="flex item-center sm:space-x-2 justify-end">
+      <div className="flex item-center sm:space-x-2 justify-end ">
         {/* profile picture will go here */}
         <Image    
         onClick={signOut}
         className="rounded-full cursor-pointer"
         src={session.user.image}
-        width="40"
-        height="40"
+        width="50"
+        height="50"
         layout="fixed"
-        alt="me" /> {/* this is the code via which we will be able to see our profile picture on the top right of the screen */}
+        alt="me"
+         /> {/* this is the code via which we will be able to see our profile picture on the top right of the screen */}
 
         <p className="whitespace-nowrap font-semibold pr-3 mt-3">
-          Mayank Kumar
+          {session.user.name}
         </p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
