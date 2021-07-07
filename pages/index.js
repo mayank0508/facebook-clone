@@ -3,11 +3,13 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Login from '../components/Login';
 import Sidebar from '../components/Sidebar';
+import Feed from '../components/Feed';
+
 
 export default function Home({ session }) {
   if (!session) return <Login />;
   return (
-    <div>
+    <div className='h-screen bg-gray-100 overflow-hidden'>
       <Head>
         <title>facebook</title> {/* here we inject the name of the bar */}
       </Head>
@@ -18,6 +20,7 @@ export default function Home({ session }) {
         {/* sidebar */}
         <Sidebar /> {/* here we are declaring our sidebar */}
         {/* feed */}
+        <Feed />
         {/* widgets */}
       </main>
       {/* <footer>
