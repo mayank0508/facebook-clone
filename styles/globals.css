@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {  { /* here we have made our own class which is called 
-                       .icon and declared it in this way */}
-    .icon {
-        @apply hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full
-         text-gray-700 cursor-pointer hover:bg-gray-300 m-1
-    }
+@layer components {
+   {
+    /* here we have made our own class which is called 
+                       .icon and declared it in this way */
+  }
+  .icon {
+    @apply hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full
+         text-gray-700 cursor-pointer hover:bg-gray-300 m-1;
+  }
+  .inputIcon {
+    /* here we are writting this css code for the div which is in the
+      InputBox component */
+    @apply flex items-center space-x-1 hover:bg-gray-100
+     flex-grow justify-center p-2 rounded-xl cursor-pointer;
+  }
 }
