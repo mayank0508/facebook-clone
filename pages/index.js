@@ -11,7 +11,7 @@ export default function Home({ session }) {
   return (
     <div className='h-screen bg-gray-100 overflow-hidden'>
       <Head>
-        <title>facebook</title> {/* here we inject the name of the bar */}
+        <title>Facebook</title> {/* here we inject the name of the bar */}
       </Head>
 
       <Header />
@@ -35,7 +35,7 @@ export async function getServerSideProps(context) {
   const session = await getSession(context);
 
   return {
-    props: { session }
+    props: { session, }
   };
 } //this code is enough to tell the next.js that we are going
 //to have server side rendering
